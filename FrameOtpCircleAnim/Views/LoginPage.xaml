@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrameOtpCircleAnim.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+        <!--
+            <Grid Margin="10,10,10,10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" TextColor="Indigo" FontSize="Large" FontAttributes="Bold" Text="Amil Clientes"/>
+                <Label Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" TextColor="LightGray" FontSize="Micro"  Text="Maria da Silva"/>
+                <Label Grid.Row="2" Grid.Column="0" BackgroundColor="Transparent" TextColor="LightGray" FontSize="Large" Text="717 042"/>
+
+                <Frame Grid.RowSpan="2" Grid.Column="1" BackgroundColor="Azure" WidthRequest="60" HeightRequest="60" VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout>
+                        <Ellipse Aspect="Uniform" Stroke="#F7F7F7" StrokeThickness="12"/>
+                        <Label VerticalOptions="Center" TextColor="#333333" HorizontalOptions="Center" FontSize="30" Text="30" />
+                        <Path Aspect="Uniform"  StrokeLineCap="Round" StrokeThickness="12" Stroke="#FF9800">
+                            <Path.Data>
+                                <PathGeometry>
+                                    <PathGeometry.Figures>
+                                        <PathFigureCollection>
+                                            <PathFigure>
+                                                <PathFigure.Segments>
+                                                    <PathSegmentCollection>
+                                                        <ArcSegment Size="300,300" IsLargeArc="True" SweepDirection="Clockwise" Point="300,300"/>
+                                                    </PathSegmentCollection>
+                                                </PathFigure.Segments>
+                                            </PathFigure>
+                                        </PathFigureCollection>
+                                    </PathGeometry.Figures>
+                                </PathGeometry>
+                            </Path.Data>
+                        </Path>
+                    </StackLayout>
+                </Frame>
+            </Grid> >
+
+        </Frame>-->
+        <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+    </StackLayout>
+</ContentPage>
